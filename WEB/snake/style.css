@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #1e1e1e;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 1px;
+    background: #333;
+    border: 4px solid #444;
+    margin-bottom: 10px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background: #1e1e1e;
+}
+
+.snake {
+    background: #4caf50;
+}
+
+.food {
+    background: #e91e63;
+}
+
+#score, #game-over {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+#game-over {
+    color: #ff5252;
+    font-weight: bold;
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #2a2a2a;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    background: #444;
+}
